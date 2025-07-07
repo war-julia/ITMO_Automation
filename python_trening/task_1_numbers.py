@@ -10,7 +10,7 @@ print(c, "Комплексное число?", isinstance(c, complex))
 print(8 + 2)
 print(8 - 2)
 print(6 * 2)
-print(8 / 2)
+print(9 / 2)
 
 print(9 / 2)
 print(7 // 2)
