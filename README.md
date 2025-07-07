@@ -1,1 +1,2 @@
-course ITMO
+course ITMO Automation project
+реппозиторий для автоматизированного тестирования
