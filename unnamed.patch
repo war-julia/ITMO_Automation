@@ -1,0 +1,90 @@
+Index: 2_hw.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/2_hw.py b/2_hw.py
+new file mode 100644
+--- /dev/null	(revision f201719029560c3999ec7551a0b8031d68c3ecaf)
++++ b/2_hw.py	(revision f201719029560c3999ec7551a0b8031d68c3ecaf)
+@@ -0,0 +1,57 @@
++#a. создайте функцию task_1(), в теле функции:
++#i. создайте 5 разных переменных с произвольным названием.
++#ii. у каждой укажите тип, типы следующие 1. int, float, str, list, bool
++#iii. заполните переменные произвольными значениями, с соответствующим для каждой типом
++#iv. выведите тип данных каждой в консоль.
++#b. в функцию добавьте аннотацию возвращаемых данных
++#c. добавьте вызов функции.
++
++
++def task_1() -> None:
++    a: int = 10
++    b: float = 3.14
++    c: str = "Поезд"
++    d: list = [1, 2, 3, 66,89]
++    e: bool = True
++
++    print(type(a))
++    print(type(b))
++    print(type(c))
++    print(type(d))
++    print(type(e))
++
++
++task_1()
++
++
++
++#a. создайте функцию task_2(), в теле функции:
++#i. есть список a = [1, 2, 3, 5, 8, 13, 21]
++#ii. выведите в консоль первые 3 значения списка
++#b. в функцию добавьте аннотацию возвращаемых данных
++#c. добавьте вызов функции.
++#d. * - скажите как называется эта последовательность чисел
++#Эта последовательность чисел называется последовательность Фибоначчи.
++# Классическая последовательность Фибоначчи начинается с чисел 0 и 1 (или 1 и 1),
++# и каждое следующее число равно сумме двух предыдущих: 0, 1, 1, 2, 3, 5, 8, 13, 21
++
++
++
++def task_2() -> None:
++    a: list = [1, 2, 3, 5, 8, 13, 21]
++    print(a[0:3])
++
++task_2()
++
++
++
++#напишите функцию task_3(), которая принимает число и возвращает квадрат этого числа.
++#b. пропишите аннотации для функции и аргумента
++#c. распечатайте в консоль вызов функции
++
++def task_3(num: int) -> int:
++    sq_num: num = num **2
++    print(sq_num)
++
++task_3(82)
++
+diff --git a/2_hw b/2_hw
+new file mode 100644
+index 0000000000000000000000000000000000000000..71bf191ecfc2b9190d1ba3a9e324a20c5ed2c229
+GIT binary patch
+literal 2323
+zc%02u!A{#i5WQFGKaAj#AY;XGLDW+F2|e|O5OPS6P${7#RO+n`rD+9)JC|O1tz=Bn
+zm?W5A*!`ovnYDuxyAtA5LSpai?97{aGqcOSO*&AC8mWN_)vfNSA?YvrMBS;e{;Fbq
+zL0!M|ZriC;Em9G&f|@KSsn~n|Y<aK5)Eeo}Sd7%2KGUb9?$r>2p_<}*mkM<NIiv{;
+zjZ}o^M4$7Xni7;k5r%k+`Jm07*wqQCF~oo1Em5~vr_0#H(1ZHDl|J<uLj!Cz&?ovr
+ze`j0d*tB=hwP<(0?c>qu9$B=%*THL}-QE{Ja0K@ua03-X5aY!#L|7h!irEC>(0$R4
+z^(6}}j$87Tz-9!4Jst4d3?QN(z|7@BoDvXTrws5T@I~+vacFa)ldzEGc+Lc9#5%!N
+zV1RN?8@A9pPrV$t#?eTho5;naKn^pVNH~v}Xy6VxEyiaK037VtCFU6W2*PNgo`8ry
+z&DQR${Al$xy=fn`P-=uf-(&LV6*)B{Xn2N5h+NxwVT3y#(+bg&`Uy8fF3u&h)%1jH
+z>}@(0)h%)@T3@#|UT&HFmM3L^{kKQQEk?uA!y|aDbUz)oDt@(EkTptVJ0-GaiLAvk
+z{$vrG6;k)uCapiJNl|JjG=0uC?{SzdkIA1)#F|AL7CCsUJ6mbT6$-6TM_FS;(hzQ;
+z?jJm&9RJ6fTW;F4LaSsD&W4FB#_2GUB!p?dBBURTiz8365yQ5DOGw};z&j@4eF+|7
+zxKh8La<Cl4ql~Cui1M2GVoum3M@;Gp=R)WN@X_bu;BcRAlv2)PK{`uQkPo6p&~vB)
+zrHQ=pPt_7Qaei107w7hnMaIxXCFXXC7!MRd=9EV=bIxP*)XZc)d?p4kRrRSyHB`3z
+z7i&Fhx!K^Umkpl6+*oLrhsO3dYo5DRopp6R*VU3AZijE#;4W!tS6X^3)t^YYUz(_5
+zxe%u&#rc$Q0t@W{6&T@?8HliF>NZg~oVo09m|X<sD$8SAY(n;8Zm0Ps689mF-v}FM
+zd_G}XQ9K7SBl=QI*(@s=B>!sCIda^}!SQ>!2ZSU%Q;s?xwq*xD;E8`%R_b|PjKTvi
+KZe^pMGV>SRPXrnO
+
