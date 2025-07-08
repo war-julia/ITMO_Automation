@@ -1,4 +1,6 @@
 #2. Функция на вход получает два произвольных числа. Вывести в консоль наибольшее из чисел.
+from python_trening.task_8_if import yes_no
+
 
 def num_max(num_1, num_2):
     if num_1 > num_2:
@@ -8,3 +10,19 @@ def num_max(num_1, num_2):
         print(num_2)
 
 num_max(17, 10)
+
+#Функция на вход получает два произвольных числа. Вывести в консоль “yes”,
+# если они отличаются друг от друга на 135, иначе вывести на экран “No”
+
+def num_dif(num_1, num_2):
+    if num_1 > num_2 and (num_1 - 135) >= 0:
+        print('yes')
+    elif num_2 > num_1 and (num_2 - 135) >= 0:
+        print('yes')
+    else:
+        print('no')
+
+num_dif(135, 136)
+
+
+
