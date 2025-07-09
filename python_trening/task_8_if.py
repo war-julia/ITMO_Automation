@@ -57,7 +57,7 @@ def student_rank(year):
     else:
         print("Введите корректный год обучения")
 
-student_rank(10)
+student_rank(3)
 
 
 def num_rank(num):
