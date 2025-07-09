@@ -29,5 +29,36 @@ num_dif(135, 136)
 # Вывести название сезона года в консоль
 # (зима, весна, лето, осень)#
 
+def print_season(month):
+    if month == 12 or month == 1 or month == 2:
+        print("зима")
+    elif month >= 3 and month <= 5:
+        print("весна")
+    elif month >= 6 and month <= 8:
+        print("лето")
+    elif month >= 9 and month <= 11:
+        print("осень")
+    else:
+        print("Некорректный номер месяца")
+
+
+print_season(5)  # выведет "весна"
+
+
+
+def check_numbers(a, b, c):
+    if a > 10 and b > 10 and c > 10:
+        print("yes")
+    else:
+        print("no")
+
+
+#Функция на вход получает три произвольных числа. Если все числа больше 10,
+# то вывести на экран “yes”, иначе “no”
+
+
+check_numbers(12, 15, 30)  # выведет "yes"
+check_numbers(10, 11, 13)   # выведет "no"
+
 
 
