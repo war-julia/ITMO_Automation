@@ -7,7 +7,7 @@ print(b, "относится к типу", type(b))
 c = 1+2j
 print(c, "Комплексное число?", isinstance(c, complex))
 
-print(9 + 2)
+print(10 + 2)
 print(8 - 2)
 print(6 * 2)
 print(9 / 2)
