@@ -70,5 +70,54 @@ math_obj.multiplication()
 math_obj.division()
 math_obj.subtraction()
 
+# 3. откройте страницу https://demoqa.com/text-box
+# На странице присутствует сайдбар (меню слева)
+# a. Создайте объекты для каждой кнопки 2-го уровня вложенности (“Text Box” и т.п.)
+# Для этого опишите класс.
+# Каждый объект должен содержать в себе:
+# - текст кнопки (пример: “Text Box”)
+# - тип - одинаковый для всех “Кнопка”
+# - локатор - не заполнять, сделать по умолчанию пустой строкой
+# Также на кнопку можно нажать - реализуйте метод.
+# Метод возвращает текст “Клик по кнопке { ТЕКСТ КНОПКИ }”
+# b. выведите текст для каждой кнопки
+# c. вызовите “Клик” для каждой кнопки
+
+class Button:
+    def __init__(self, text):
+        self.text = text
+        self.type = "Кнопка"
+        self.locator = ""
+
+    def click(self):
+        return f"Клик по кнопке {self.text}"
+
+
+# Список кнопок 2-го уровня вложенности на https://demoqa.com/text-box (примерные названия)
+buttons = [
+    Button("Text Box"),
+    Button("Check Box"),
+    Button("Radio Button"),
+    Button("Web Tables"),
+    Button("Buttons"),
+    Button("Links"),
+    Button("Broken Links - Images"),
+    Button("Upload and Download"),
+    Button("Dynamic Properties")
+]
+
+# Вывести текст каждой кнопки
+for btn in buttons:
+    print(btn.text)
+
+print()  # Пустая строка для разделения вывода
+
+# Вызвать метод click для каждой кнопки
+for btn in buttons:
+    print(btn.click())
+
+
+
+
 
 
