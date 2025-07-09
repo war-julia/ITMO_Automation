@@ -11,7 +11,7 @@ class Input:
     # создаем экземпляры класса
 
 
-search = Input('button#home')
+search = Input('input#loc')
 # вызываем метод
 
 print(search.loc)
