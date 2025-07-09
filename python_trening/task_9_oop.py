@@ -7,4 +7,15 @@ class Button
 
 # создаем экземпляры класса
 home = Button('Домой', '/home')
+catalog_msk = Button('Каталог', '/msk/catalog')
+
+# получаем доступ к атрибутам
+
+print(home.tex)
+
+
+
+
+
+
 
