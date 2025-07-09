@@ -66,5 +66,5 @@ def num_rank(num):
     else:
         print("+")
 
-num_rank(-10000)
+num_rank(-20000)
 
