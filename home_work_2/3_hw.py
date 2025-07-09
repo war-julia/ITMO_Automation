@@ -88,3 +88,7 @@ print(count_pos([1, -2, 3, 0, 5]))
 # Считать, что в каждом месяце 29 дней.
 
 
+def days_numbers(years, months):
+    return years*12*29 + months*29
+
+print(days_numbers(1, 1))
