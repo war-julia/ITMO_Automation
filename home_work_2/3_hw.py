@@ -45,6 +45,8 @@ def print_season(month):
 print_season(5)  # выведет "весна"
 
 
+#Функция на вход получает три произвольных числа. Если все числа больше 10,
+# то вывести на экран “yes”, иначе “no”
 
 def check_numbers(a, b, c):
     if a > 10 and b > 10 and c > 10:
@@ -53,12 +55,36 @@ def check_numbers(a, b, c):
         print("no")
 
 
-#Функция на вход получает три произвольных числа. Если все числа больше 10,
-# то вывести на экран “yes”, иначе “no”
+check_numbers(12, 15, 30)
+#check_numbers(10, 11, 13)
+
+#Функция на вход получает список,
+# состоящий из 5 произвольных чисел.
+# Найти количество положительных чисел среди них.
+
+def count_pos(numbers):
+    count = 0
+    if numbers[0] > 0:
+        count = count + 1
+    if numbers[1] > 0:
+        count = count + 1
+    if numbers[2] > 0:
+        count = count + 1
+    if numbers[3] > 0:
+        count = count + 1
+    if numbers[4] > 0:
+        count = count + 1
+    return count
 
 
-check_numbers(12, 15, 30)  # выведет "yes"
-check_numbers(10, 11, 13)   # выведет "no"
+print(count_pos([1, -2, 3, 0, 5]))
 
+
+
+#Функция на вход получает 2 переменные.
+#a. Кол-во лет (int)
+#b. Кол-во месяцев (int)
+#Вывести в консоль количество дней за это время.
+# Считать, что в каждом месяце 29 дней.
 
 
