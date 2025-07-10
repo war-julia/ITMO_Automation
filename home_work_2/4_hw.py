@@ -88,13 +88,13 @@ class Button:
         self.text = text
         self.type = "Кнопка"
         self.locator = ""
-
+# метод
     def click(self):
-        return f"Клик по кнопке {self.text}"
+        return print(f"Клик по кнопке {self.text}")
 
 
-# Список кнопок 2-го уровня вложенности на https://demoqa.com/text-box (примерные названия)
-buttons = [
+# Список кнопок 2-го уровня вложенности на https://demoqa.com/text-box
+buttons_list = [
     Button("Text Box"),
     Button("Check Box"),
     Button("Radio Button"),
@@ -107,13 +107,13 @@ buttons = [
 ]
 
 # Вывести текст каждой кнопки
-for btn in buttons:
+for btn in buttons_list:
     print(btn.text)
 
-print()  # Пустая строка для разделения вывода
+print('/n')  # Пустая строка
 
 # Вызвать метод click для каждой кнопки
-for btn in buttons:
+for btn in buttons_list:
     print(btn.click())
 
 
