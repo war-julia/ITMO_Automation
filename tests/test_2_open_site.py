@@ -6,16 +6,19 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 
-driver = webdriver.Chrome()  # драйвер
+driver = webdriver.Chrome()
 driver.get('https://demoqa.com/')
 
-#поиск элемента
-icon = driver.find_element(By.CSS_SELECTOR, 'header > a > img')
-if icon is not None:
-    print('Элемент  не найден')
-else:
+try:
+    icon = driver.find_element(By.CSS_SELECTOR, 'header > a > img')
     print('Элемент найден')
+except NoSuchElementException:
+    print('Элемент не найден')
+
+driver.quit()
+
 
 
 
