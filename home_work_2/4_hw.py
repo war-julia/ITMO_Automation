@@ -106,16 +106,11 @@ buttons_list = [
     Button("Dynamic Properties")
 ]
 
-# Вывести текст каждой кнопки
+# Вывести текст каждой кнопки Вызвать метод click для каждой кнопки
 for btn in buttons_list:
     print(btn.text)
-
-print('/n')  # Пустая строка
-
-# Вызвать метод click для каждой кнопки
-for btn in buttons_list:
     print(btn.click())
-
+    print()
 
 
 
